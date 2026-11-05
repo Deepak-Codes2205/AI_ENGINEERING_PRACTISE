@@ -102,7 +102,7 @@ def run_agent(question):
 
         answer = response.choices[0].message.content or ""
 
-        print(answer)
+        print("answer is ",answer)
 
         # Agent has finished
         if "Final Answer:" in answer:
@@ -130,6 +130,8 @@ def run_agent(question):
             tool_input = tool_input.strip()
 
             tool_input = tool_input.strip('"')
+
+            tool_input = tool_input.strip().strip('"\'')
 
 
             # Run the tool
