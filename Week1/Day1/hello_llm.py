@@ -13,7 +13,7 @@ if not my_api_key:
 client = Groq(api_key=my_api_key)
 model = "openai/gpt-oss-120b"
 role = "user"
-prompt = "Who is Padho with Pratyush and what does he teaches"
+prompt = "What is Bellman Ford's algorithm?"
 
 # Message require role and content to be passed in the message object. 
 # The role can be user, assistant or system. 
