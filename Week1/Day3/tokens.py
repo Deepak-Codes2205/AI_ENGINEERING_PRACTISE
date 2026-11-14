@@ -12,7 +12,7 @@ if not my_api_key:
 
 client=Groq(api_key=my_api_key)
 
-model="llama-3.3-70b-versatile"
+model="openai/gpt-oss-120b"
 role="user"
 # // 3 prompts
 prompt1 = "Hi!"
